@@ -9,7 +9,7 @@ export class HttpService {
   constructor(private readonly http: HttpClient) {}
 
   getData() {
-    return this.http.get<User[]>('http://localhost:3000/info');
+    return this.http.get<User[]>('http://10.2.0.1:3000/info');
   }
 
   removeUser() {}
